@@ -37,3 +37,9 @@ button, select {
     border-radius: 10px;
     font-size: 30px;
 }
+
+#footer {
+    color: #fff;
+    font-family: helvetica;
+    margin-top: 50px;
+}

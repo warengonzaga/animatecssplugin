@@ -15,6 +15,10 @@ function animation() {
         console.log("Pulse Selected");
         return c();
         
+    } else if (userSelect == "rubber band") {
+        console.log("Rubber Band Selected");
+        return d();
+        
     } else {
         return false; // Do Nothing
     }
@@ -30,4 +34,9 @@ function b() {
 
 function c() {
     TweenMax.to("#texts", 1, {onStart: pulse});
+}
+
+function d() {
+    TweenMax.to("#texts", 1, {onStart: rubberBand});
+    TweenMax.to("#texts", 1, {onStart: flash, delay: 1});
 }
