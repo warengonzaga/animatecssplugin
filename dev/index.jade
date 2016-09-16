@@ -3,9 +3,66 @@ html
  
  head
   title
+   | AnimateCSSPlugin DEMO
   meta(name="viewport", content="width=device-width, initial-scale=1")
   meta(name="author", content="Waren Gonzaga")
-  script(src="dist/animateCSSPlugin.min.js")
+  style.
+   body {
+        background: #222;
+   }
+   
+   #texts {
+        color: #fff;
+        text-align: center;
+        font-family: helvetica;
+        font-weight: 900;
+        font-size: 50px;
+        margin-top: 200px;
+   }
+   
+   button {
+        border: solid #fff 5px;
+        background: transparent;
+        padding: 5px;
+        color: #fff;
+        font-weight: 900;
+   }
+   
+   select {
+        border: solid #fff 5px;
+        background: transparent;
+        padding: 5px;
+        color: #fff;
+        font-weight: 900;
+   }
+   
+   optgroup, option {
+        background: #222;
+        font-weight: 900;
+   }
+   
+   button, select {
+        border-radius: 10px;
+        font-size: 30px;
+   }
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js")
+  script(src="dev/animateCSSPlugin.js")
+  script(src="script.js")
   
  body
-  p This is sample
+  p#texts
+   | AnimateCSSPlugin
+  
+  center
+   select#animations
+    optgroup(label="Attention Seekers")
+     option(value="bounce", selected="selected")
+      | Bounce
+     option(value="flash")
+      | Flash
+     option(value="pulse")
+      | Pulse
+    
+   button(onclick="animation()").
+    Animate it
+     

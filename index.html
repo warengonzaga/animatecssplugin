@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>AnimateCSSPlugin DEMO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Waren Gonzaga">
-    <script src="dist/animateCSSPlugin.min.js"></script>
+    <style>
+      body {
+           background: #222;
+      }
+      
+      #texts {
+           color: #fff;
+           text-align: center;
+           font-family: helvetica;
+           font-weight: 900;
+           font-size: 50px;
+           margin-top: 200px;
+      }
+      
+      button {
+           border: solid #fff 5px;
+           background: transparent;
+           padding: 5px;
+           color: #fff;
+           font-weight: 900;
+      }
+      
+      select {
+           border: solid #fff 5px;
+           background: transparent;
+           padding: 5px;
+           color: #fff;
+           font-weight: 900;
+      }
+      
+      optgroup, option {
+           background: #222;
+           font-weight: 900;
+      }
+      
+      button, select {
+           border-radius: 10px;
+           font-size: 30px;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="dev/animateCSSPlugin.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <p>This is sample</p>
+    <p id="texts">AnimateCSSPlugin</p>
+    <center>
+      <select id="animations">
+        <optgroup label="Attention Seekers">
+          <option value="bounce" selected="selected">Bounce</option>
+          <option value="flash">Flash</option>
+          <option value="pulse">Pulse</option>
+        </optgroup>
+      </select>
+      <button onclick="animation()">
+        Animate it
+         
+      </button>
+    </center>
   </body>
 </html>
