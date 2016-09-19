@@ -1,3 +1,6 @@
+"use-strict"
+
+/* global TweenMax */
 
 function animation() {
     var e = document.getElementById("animations");
@@ -5,38 +8,53 @@ function animation() {
     
     if (userSelect == "bounce") {
         console.log("Bounce Selected");
-        return a();
+        return aBounce();
         
     } else if (userSelect == "flash") {
         console.log("Flash Selected");
-        return b();
+        return bFlash();
         
     } else if (userSelect == "pulse") {
         console.log("Pulse Selected");
-        return c();
+        return cPulse();
         
     } else if (userSelect == "rubber band") {
         console.log("Rubber Band Selected");
-        return d();
+        return dRubberBand();
+
+    } else if (userSelect == "shake") {
+        console.log("Shake Selected");
+        return eShake();
+        
+    } else if (userSelect == "swing") {
+        console.log("Swing Selected");
+        return fSwing();
         
     } else {
         return false; // Do Nothing
     }
 }
 
-function a() {
+function aBounce() {
     TweenMax.to("#texts", 1, {onStart: bounce});
 }
 
-function b() {
+function bFlash() {
     TweenMax.to("#texts", 1, {onStart: flash});
 }
 
-function c() {
+function cPulse() {
     TweenMax.to("#texts", 1, {onStart: pulse});
 }
 
-function d() {
+function dRubberBand() {
     TweenMax.to("#texts", 1, {onStart: rubberBand});
-    TweenMax.to("#texts", 1, {onStart: flash, delay: 1});
+}
+
+function eShake() {
+    TweenMax.to("#texts", 1, {onStart: shake});
+}
+
+function fSwing() {
+    TweenMax.to("#texts", 1, {onStart: swing});
 }

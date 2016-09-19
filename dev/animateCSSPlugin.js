@@ -7,7 +7,14 @@
  
 document.write(TweenMaxCDN);*/
 
+/* global TweenMax */
+/* global Bounce */
+/* global Elastic */
+
+"use-strict"
+
 var highSpeed = 0.1,
+    midHighSpeed = 0.2,
     mediumSpeed = 0.3,
     normalSpeed = 0.5;
  
@@ -35,4 +42,25 @@ function rubberBand() {
     console.log("Rubber Band!");
     TweenMax.to(this.target, 0.2, {scaleX: 1.2, scaleY: 0.8});
     TweenMax.to(this.target, 0.8, {scaleX: 1, scaleY: 1, delay: mediumSpeed, ease:Elastic.easeOut});
+}
+
+function shake() {
+    TweenMax.to(this.target, normalSpeed, {x: "-=10px"});
+    TweenMax.to(this.target, normalSpeed, {x: "+=40px", delay: highSpeed});
+    TweenMax.to(this.target, normalSpeed, {x: "-=40px", delay: highSpeed * 2});
+    TweenMax.to(this.target, normalSpeed, {x: "+=40px", delay: highSpeed * 3});
+    TweenMax.to(this.target, normalSpeed, {x: "-=40px", delay: highSpeed * 4});
+    TweenMax.to(this.target, normalSpeed, {x: "+=40px", delay: highSpeed * 5});
+    TweenMax.to(this.target, normalSpeed, {x: "-=40px", delay: highSpeed * 6});
+    TweenMax.to(this.target, normalSpeed, {x: "+=40px", delay: highSpeed * 7});
+    TweenMax.to(this.target, normalSpeed, {x: "-=40px", delay: highSpeed * 8});
+    TweenMax.to(this.target, normalSpeed, {x: 0, delay: highSpeed * 9});
+}
+
+function swing() {
+    TweenMax.to(this.target, mediumSpeed, {rotationZ: "+=10"});
+    TweenMax.to(this.target, mediumSpeed, {rotationZ: "-=20", delay: mediumSpeed});
+    TweenMax.to(this.target, mediumSpeed, {rotationZ: "+=15", delay: mediumSpeed * 2});
+    TweenMax.to(this.target, mediumSpeed, {rotationZ: "-=15", delay: mediumSpeed * 3});
+    TweenMax.to(this.target, mediumSpeed, {rotationZ: 0, delay: mediumSpeed * 4});
 }
