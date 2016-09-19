@@ -7,6 +7,6 @@
 <p> * To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent. </p>
 
 <h4> Public Chat (for animateCSSPlugin discussion and support) </h4>
-<center><a href="tlk.io/animateCSSPlugin" target="_blank" title="Go to group discussion?
+<center><a href="https://tlk.io/animateCSSPlugin" target="_blank" title="Go to group discussion?
 "><b>Click This</b></a></center>
 <p><i>Coded with <font color="red"><b> <3 </b></font> by Waren Gonzaga</i></p>
