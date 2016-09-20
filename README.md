@@ -51,6 +51,9 @@ function animation() {
 <h3> GreenSock Forum </h3>
 <b>[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)</b>
 
+<h3> Official Blog </h3>
+<b>[AnimateCSSPlugin.js Blog Link](http://warengonzaga.com/blog/2016/09/20/animatecssplugin-js-gsap/)</b>
+
 <h3> Contribution </h3>
 <p> * To contribute you must have idea on how to use GreenSock Animation Platform. </p>
 <p> * To contribute you should have experience in Jade (html preprocessor) this will help the development faster for the index. </p>
