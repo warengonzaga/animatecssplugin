@@ -34,6 +34,11 @@
  TweenMax.to("#obj", 1, {onStart: flash});
 ```
 
+<p>This is for using Animate.css - <b>Rubber Band:</b></p>
+```javascript
+ TweenMax.to("#obj", 1, {onStart: rubberBand});
+```
+
 <h3> Example Script </h3>
 ```javascript
 
