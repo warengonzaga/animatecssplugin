@@ -45,6 +45,9 @@ function animation() {
 
 ```
 
+<p data-height="361" data-theme-id="0" data-slug-hash="YGGRBz" data-default-tab="js,result" data-user="Waren_Gonzaga" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Waren_Gonzaga/pen/YGGRBz/">AnimateCSSPlugin for GSAP</a> by Waren Gonzaga (<a href="http://codepen.io/Waren_Gonzaga">@Waren_Gonzaga</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
 <h3> GreenSock Forum </h3>
 <b>[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)</b>
 
