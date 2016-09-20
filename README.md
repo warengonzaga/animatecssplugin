@@ -7,7 +7,7 @@
 <h4> TweenMax: </h4>
 ```html
 
- <script src="http://warengonzaga.github.io/sites/assets/animatecssplugin/js/animateCSSPlugin.min.js"></script>
+ <script src="http://warengonzaga.github.io/cdn/animatecssplugin/0.2.2/animateCSSPlugin.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
  
 ```
@@ -15,7 +15,7 @@
 <h4> TweenLite: </h4>
 ```html
 
-<script src="http://warengonzaga.github.io/sites/assets/animatecssplugin/js/animateCSSPlugin.min.js"></script>
+<script src="http://warengonzaga.github.io/cdn/animatecssplugin/0.2.2/animateCSSPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/easing/EasePack.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
