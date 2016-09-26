@@ -73,7 +73,3 @@ function tada() {
     TweenMax.to(this.target, mediumSpeed, {rotationZ: "-=20", delay: highSpeed * 5});
     TweenMax.to(this.target, mediumSpeed, {rotationZ: 0, scale: 1, delay: highSpeed * 6});
 }
-
-function sample() {
-    alert('sample!');
-}

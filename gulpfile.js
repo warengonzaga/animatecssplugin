@@ -20,9 +20,14 @@ var destOptions = {
  * Writen by Waren Gonzaga
  */
 
-gulp.task('default', ['jade','sass','jshint','build'], function() {
-  gutil.log(gutil.colors.green('Starting...'));
-  gutil.log(gutil.colors.green('Writen by Waren Gonzaga'));
+gulp.task('default', ['init','jade','sass','jshint','build']);
+
+gulp.task('init', function() {
+    gutil.log(gutil.colors.green('AnimateCSSPlugin for GreenSock'));
+    gutil.log(gutil.colors.green('Writen by Waren Gonzaga'));
+});
+
+gulp.task('dev', ['jade','sass','jshint','build'], function() {
   gulp.watch('source/*jade', ['jade'], gutil.log(
     gutil.colors.cyan('Watching index.jade file...'),
     gutil.colors.green('OK!')
