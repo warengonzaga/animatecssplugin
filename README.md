@@ -1,5 +1,5 @@
-<h2> AnimateCSSPlugin ➡ [Demo Here](http://warengonzaga.github.io/sites/animatecssplugin.html)
-<h3> For GreenSock (TweenMax & TweenLite) </h3>
+## AnimateCSSPlugin ➡ [Demo Here](http://warengonzaga.github.io/sites/animatecssplugin.html) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin)
+### For GreenSock (TweenMax & TweenLite) </h3>
 <p> AnimateCSSPlugin is a plugin for GreenSock Animation Platform or GSAP. This plugin is replicate of all animation from Animate.css. The reason was they cannot be both use in creating custom animation such as Banner Ads making. So I decided to create a project the could be mimic all of the animation that can be found on Animate.css. I know this is silly idea but this will help others to use both animate.css and gsap with no worries. You can contribute and mimic the animtions from animate.css then make a pull request the I will review it as soon as possible thanks!
 
 <h3> Usage </h3>
