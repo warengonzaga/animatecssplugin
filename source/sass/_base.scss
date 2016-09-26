@@ -1,0 +1,46 @@
+@import 'vars';
+
+body {
+  background: $background-color;
+}
+
+#texts {
+  color: $text-color;
+  text-align: center;
+  font-family: helvetica;
+  font-weight: 900;
+  font-size: 50px;
+  margin-top: 200px;
+}
+   
+button {
+  border: solid #fff 5px;
+  background: transparent;
+  padding: 5px;
+  color: $text-color;
+  font-weight: 900;
+}
+   
+select {
+  border: solid #fff 5px;
+  background: transparent;
+  padding: 5px;
+  color: $text-color;
+  font-weight: 900;
+}
+   
+optgroup, option {
+  background: #222;
+  font-weight: 900;
+}
+   
+button, select {
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+#footer {
+  color: $text-color;
+  font-family: helvetica;
+  margin-top: 50px;
+}

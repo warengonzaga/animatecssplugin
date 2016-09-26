@@ -28,6 +28,7 @@
     "gulp-jshint": "^2.0.1",
     "gulp-minifier": "^0.1.4",
     "gulp-multi-dest": "0.0.4",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sass-lint": "^1.2.0",
     "gulp-util": "^3.0.7",
