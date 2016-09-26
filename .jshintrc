@@ -1,0 +1,9 @@
+{
+  "undef": false,
+  "unused": false,
+  "predef": [ 
+      "TweenMax", 
+      "Bounce", 
+      "Elastic" 
+    ]
+}
