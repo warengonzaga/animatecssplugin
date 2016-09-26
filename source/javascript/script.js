@@ -1,6 +1,4 @@
-"use-strict"
-
-/* global TweenMax */
+"use-strict";
 
 function animation() {
     var e = document.getElementById("animations");

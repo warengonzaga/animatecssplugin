@@ -33,6 +33,9 @@ gulp.task('default', function() {
 });
 
 gulp.task('jade', function() {
+    gutil.log(gutil.colors.cyan('Compiling Jade file...'))
+    gutil.log(gutil.colors.cyan('Updating HTML...'))
+    gutil.log(gutil.colors.cyan('Status: '), gutil.colors.green('DONE!'))
     gulp.src('source/*.jade')
     .pipe(jade({
       pretty: true
@@ -41,6 +44,9 @@ gulp.task('jade', function() {
 })
 
 gulp.task('sass', function() {
+  gutil.log(gutil.colors.cyan('Compiling SCSS Files...'))
+  gutil.log(gutil.colors.cyan('Updating CSS File'))
+  gutil.log(gutil.colors.cyan('Status: '), gutil.colors.green('DONE!'))
   gulp.src('source/sass/**/*.scss')
   .pipe(sassLint())
   .pipe(sassLint.format())
@@ -50,6 +56,8 @@ gulp.task('sass', function() {
 })
 
 gulp.task('jshint', function() {
+    gutil.log(gutil.colors.cyan('Updating JavaScript Files...'))
+    gutil.log(gutil.colors.cyan('Status: '), gutil.colors.green('DONE!'))
     gulp.src('source/javascript/**/*.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'))
