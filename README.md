@@ -1,4 +1,4 @@
-## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/)
+## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) [![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/)
 <i>"The Easiest Way to Animate"</i>
 ***
 
