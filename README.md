@@ -62,7 +62,7 @@ Download and extract the [latest release](https://github.com/WarenGonzaga/Animat
 Install the dependencies and devDependencies.
 ```sh
  $ npm install
- $ gulp
+ $ npm install -g gulp
 ```
 
 <h3> Development </h3>
