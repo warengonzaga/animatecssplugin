@@ -1,4 +1,4 @@
-## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) [![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/)
+## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) [![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animatecssplugin/Lobby)
 <i>"The Easiest Way to Animate"</i>
 ***
 
@@ -93,7 +93,4 @@ It will generate `demo/` and `build/` folders in your directory. Demo folder con
 <h3> Official Blog </h3>
 <b>[AnimateCSSPlugin.js Blog Link](http://warengonzaga.com/blog/2016/09/20/animatecssplugin-js-gsap/)</b>
 
-<h4> Public Chat (for animateCSSPlugin discussion and support) </h4>
-<center><a href="https://tlk.io/animateCSSPlugin" target="_blank" title="Go to group discussion?
-"><b>Click This</b></a></center>
-<p><i>Coded with <font color="red"><b> <3 </b></font> by Waren Gonzaga</i></p>
+</> with <3 by Waren Gonzaga
