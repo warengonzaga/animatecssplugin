@@ -1,4 +1,7 @@
 ## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/)
+<i>"The Easiest Way to Animate"</i>
+***
+
 ### For GreenSock (TweenMax & TweenLite) </h3>
 <p> AnimateCSSPlugin is a plugin for GreenSock Animation Platform or GSAP. This plugin is replicate of all animation from Animate.css. The reason was they cannot be both use in creating custom animation such as Banner Ads making. So I decided to create a project the could be mimic all of the animation that can be found on Animate.css. I know this is silly idea but this will help others to use both animate.css and gsap with no worries. You can contribute and mimic the animtions from animate.css then make a pull request the I will review it as soon as possible thanks!
 
@@ -50,19 +53,45 @@ function animation() {
 
 ```
 
-<p data-height="361" data-theme-id="0" data-slug-hash="YGGRBz" data-default-tab="js,result" data-user="Waren_Gonzaga" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/Waren_Gonzaga/pen/YGGRBz/">AnimateCSSPlugin for GSAP</a> by Waren Gonzaga (<a href="http://codepen.io/Waren_Gonzaga">@Waren_Gonzaga</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<h2> Codepen </h2>
+Try the codepen demo here! --> http://codepen.io/Waren_Gonzaga/pen/YGGRBz
+
+<h3> Installation </h3>
+AnimateCSSPlugin requires [Node.js](https://nodejs.org/) v4+ to run.
+Download and extract the [latest release](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases)
+Install the dependencies and devDependencies.
+```sh
+ $ npm install
+ $ gulp
+```
+
+<h3> Development </h3>
+What to contribute? That would be great!
+AnimateCSSPlugin.js uses Gulp.js + Jade + SASS for faster development. Make a change in your file and instantanously see your updates!
+
+```sh
+ $ gulp dev
+```
+
+<h3> Building Source </h3>
+To build your changes do this:
+
+```sh
+ $ gulp build
+```
+
+<h3> Contribution </h3>
+* To contribute you must have idea on how to use GreenSock Animation Platform.
+* To contribute you should have experience in using preprocessors such as Jade and SASS.
+* To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent. 
+
+It will generate `demo/` and `build/` folders in your directory. Demo folder contains one html file, css file and js file for demo purposes while Build folder contains the minified javascript of AnimateCSSPlugin (AnimateCSSPlugin.min.js) and production javascript version of AnimateCSSPlugin (AnimateCSSPlugin.js). Make pull request for any updates!
 
 <h3> GreenSock Forum </h3>
 <b>[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)</b>
 
 <h3> Official Blog </h3>
 <b>[AnimateCSSPlugin.js Blog Link](http://warengonzaga.com/blog/2016/09/20/animatecssplugin-js-gsap/)</b>
-
-<h3> Contribution </h3>
-<p> * To contribute you must have idea on how to use GreenSock Animation Platform. </p>
-<p> * To contribute you should have experience in Jade (html preprocessor) this will help the development faster for the index. </p>
-<p> * To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent. </p>
 
 <h4> Public Chat (for animateCSSPlugin discussion and support) </h4>
 <center><a href="https://tlk.io/animateCSSPlugin" target="_blank" title="Go to group discussion?
