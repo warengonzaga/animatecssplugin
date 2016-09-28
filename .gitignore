@@ -1,4 +1,4 @@
 .c9
-node_modules/
-demo/
-build/
+node_modules/**/*
+demo/*
+build/*
