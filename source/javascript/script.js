@@ -27,6 +27,10 @@ function animation() {
     } else if (userSelect == "swing") {
         console.log("Swing Selected");
         return fSwing();
+    
+    } else if (userSelect == "tada") {
+        console.log("Tada Selected");
+        return gTada();
         
     } else {
         return false; // Do Nothing
@@ -55,4 +59,8 @@ function eShake() {
 
 function fSwing() {
     TweenMax.to("#texts", 1, {onStart: swing});
+}
+
+function gTada() {
+    TweenMax.to("#texts", 1, {onStart: tada});
 }
