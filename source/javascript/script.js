@@ -31,8 +31,17 @@ function animation() {
     } else if (userSelect == "tada") {
         console.log("Tada Selected");
         return gTada();
-        
-    } else {
+    }
+     else if (userSelect == "wobble") {
+        console.log("Wobble Selected");
+        return hWobble();
+    }
+
+
+
+
+
+    else {
         return false; // Do Nothing
     }
 }
@@ -63,4 +72,8 @@ function fSwing() {
 
 function gTada() {
     TweenMax.to("#texts", 1, {onStart: tada});
+}
+
+function hWobble() {
+    TweenMax.to("#texts", 1, {onStart: wobble});
 }
