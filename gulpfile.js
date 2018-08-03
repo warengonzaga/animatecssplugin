@@ -41,6 +41,7 @@ gulp.task('dev', ['jade','sass','jshint','build','browserSync'], function() {
     gutil.colors.cyan('Watching javascript files...'),
     gutil.colors.green('OK!')
     ));
+  gulp.watch('./demo/index.html', browserSync.reload)
   gutil.log(gutil.colors.cyan('Watching Changes...'));
 });
 
