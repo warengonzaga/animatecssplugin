@@ -13,6 +13,10 @@ var highSpeed = 0.1,
     midHighSpeed = 0.2,
     mediumSpeed = 0.3,
     normalSpeed = 0.5;
+    fastSpeed = 0.8;
+    oneSecSpeed = 1.0;
+
+var tl = new TimelineMax();
     
 function reset() {
     TweenMax.set(this.target, {x: 0, y: 0, z: 0, scale: 1, rotation: 0, transformOrigin: "center center"});
@@ -40,8 +44,8 @@ function pulse() {
 
 function rubberBand() {
     console.log("Rubber Band!");
-    TweenMax.to(this.target, 0.2, {scaleX: 1.2, scaleY: 0.8});
-    TweenMax.to(this.target, 0.8, {scaleX: 1, scaleY: 1, delay: mediumSpeed, ease:Elastic.easeOut, onComplete: reset});
+    TweenMax.to(this.target, midHighSpeed, {scaleX: 1.2, scaleY: 0.8});
+    TweenMax.to(this.target, fastSpeed, {scaleX: 1, scaleY: 1, delay: mediumSpeed, ease:Elastic.easeOut, onComplete: reset});
 }
 
 function shake() {
@@ -75,4 +79,16 @@ function tada() {
     TweenMax.to(this.target, highSpeed, {rotation: "+=10", delay: midHighSpeed + (0.1 * 3)});
     TweenMax.to(this.target, highSpeed, {rotation: "-=10", delay: midHighSpeed + (0.1 * 4)});
     TweenMax.to(this.target, highSpeed, {rotation: "+=5", scale: 1, delay: midHighSpeed + (0.1 * 5), onComplete: reset});
+}
+
+function wobble() {
+
+    tl.to(this.target, 0.13, {rotation: -3, x: -80 ,y: 4})
+    .to(this.target, 0.13, {rotation: 3, x: 80 ,y: -4})
+    .to(this.target, 0.13, {rotation: -3, x: -60 ,y: 3})
+    .to(this.target, 0.13, {rotation: 3, x: 60 ,y: -3})
+    .to(this.target, 0.13, {rotation: -3, x: -30 ,y: 2})
+    .to(this.target, 0.13, {rotation: 3, x: 30 ,y: -2})
+    .to(this.target, 0.13, {rotation: 0, x: -5 ,y: 0})
+    .to(this.target, 0.13, {rotation: 0, x: 0 ,y: 0});
 }
