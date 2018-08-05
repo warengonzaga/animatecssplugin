@@ -10,6 +10,18 @@
  * Github: @WarenGonzaga
  */
 
+/*!
+ * animatecssplugin - https://github.com/WarenGonzaga/AnimateCSSPlugin#readme
+ * Version: 0.3.0
+ * Demo: https://warengonzaga.github.io/sites/animatecssplugin.html
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright (c) 2018 Waren Gonzaga
+ * 
+ * Facebook: @WarenGonzagaOfficialPage
+ * Twitter: @Waren_Gonzaga
+ * Github: @WarenGonzaga
+ */
+
 "use-strict";
 
 var highSpeed = 0.1,
@@ -22,7 +34,7 @@ var highSpeed = 0.1,
 var tl = new TimelineMax();
     
 function reset() {
-    TweenMax.set(this.target, {x: 0, y: 0, z: 0, opacity: 1, scale: 1, rotationX: 0, skewX: 0, skewY: 0 , rotationY: 0 , rotation: 0, transformOrigin: "center center"});
+    TweenMax.set(this.target, {x: 0, y: 0, z: 0, opacity: 1, scale: 1, rotationX: 0, rotationY: 0 , rotation: 0, skewX: 0, skewY: 0 , transformOrigin: "center center"});
 }
  
 function bounce() {
@@ -102,7 +114,8 @@ function jello() {
     .to(this.target, highSpeed, {skewX: 7 , skewY: 14 ,ease: Power1.easeOut})
     .to(this.target, highSpeed, {skewX: -10 , skewY: -5 ,ease: Power1.easeOut})
     .to(this.target, highSpeed, {skewX: 3 , skewY: 1.5 ,ease: Power1.easeOut})
-    .to(this.target, highSpeed, {skewX: -1 , skewY : -1, ease: Power1.easeOut , onComplete: reset});
+    .to(this.target, highSpeed, {skewX: -1 , skewY: -1 ,ease: Power1.easeOut})
+    .to(this.target, highSpeed, {skewX: 0 , skewY : 0, ease: Power1.easeOut , onComplete: reset});
 }
 
 
