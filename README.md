@@ -95,6 +95,7 @@ To build your changes do this:
 * To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent.
 
 <h4>Note</h4>
+
 It will generate `demo/` and `build/` folders in your directory. **Demo** folder contains one html file, css file and js file for demo purposes while **Build** folder contains the minified javascript of AnimateCSSPlugin (AnimateCSSPlugin.min.js) and production javascript version of AnimateCSSPlugin (AnimateCSSPlugin.js). After executing the `gulp build` command please do a `gulp update` so that the downloadable files are always updated. The downloadable files are the animateCSSPlugin files in the root of this project. Always pull the latest copy of this repo to prevent any problem while contributing. Make pull request for any updates!
 
 <h3> GreenSock Forum </h3>
