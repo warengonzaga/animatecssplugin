@@ -158,7 +158,7 @@ gulp.task('build', function() {
   gutil.log(gutil.colors.cyan('Production:'), gutil.colors.green('DONE!!!'));
   
   gutil.log(gutil.colors.cyan('Status:'), gutil.colors.green('DONE!!!'));
-  gutil.log(gutil.colors.red('Do "gulp update" to update the downloadable version of AnimateCSSPlugin.'));
+  gutil.log(gutil.colors.yellow('Do "gulp update" to update the downloadable version of AnimateCSSPlugin.'));
 });
 
 gulp.task('browserSync', function() {
