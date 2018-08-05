@@ -377,4 +377,33 @@ function rotateInUpRight() {
     .to(this.target, oneSecSpeed, {rotationZ : 0 , opacity: 1 , ease: Back.easeOut.config(1.7) , onComplete: reset});
 }
 
+function rotateOut() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, slowSpeed, {rotationZ : 200 , opacity: 0 , ease: Power1.easeOut , onComplete: reset});
+}
+
+function rotateOutDownLeft() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, 1.3, {rotationZ : 15 , opacity: 0 , transformOrigin: "left bottom" , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutDownRight() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, 1.3, {rotationZ : -15 , opacity: 0 , transformOrigin: "right bottom" , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutUpLeft() {
+
+    tl.set(this.target, {rotationZ : 0 , transformOrigin: "left bottom" , opacity: 1})
+    .to(this.target, oneSecSpeed, {rotationZ : -15 , opacity: 0  , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutUpRight() {
+
+    tl.set(this.target, {rotationZ : 0 , transformOrigin: "right bottom" , opacity: 1})
+    .to(this.target, oneSecSpeed, {rotationZ : 15 , opacity: 0  , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
 
