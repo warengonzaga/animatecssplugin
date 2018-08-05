@@ -9,7 +9,7 @@ var gulp  = require('gulp'),
     jshint = require('gulp-jshint'),
     minify = require('gulp-minifier'),
     multiDest = require('gulp-multi-dest'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
     browserSync = require('browser-sync').create();
 
 var destOptions = {
