@@ -46,7 +46,7 @@ var opts = {
  * Writen by Waren Gonzaga
  */
 
-gulp.task('default', ['init','jade','sass','jshint','build']);
+gulp.task('default', ['init','jade','sass','jshint','build','update']);
 
 gulp.task('init', function() {
     gutil.log(gutil.colors.green('AnimateCSSPlugin for GreenSock'));
