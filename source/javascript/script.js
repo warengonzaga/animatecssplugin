@@ -358,9 +358,3 @@ function aoflipOutX() {
 function apflipOutY() {
     TweenMax.to("#texts", 1, {onStart: flipOutY});
 }
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> c3b0a2610aa4b6c37dde2a0012ea6e02212428e1
