@@ -1,19 +1,19 @@
-/*
-*
-* var TweenMaxCDN = "<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>";
-* document.write(TweenMaxCDN);
-* 
-*/
+/* global 
 
-/* global TweenMax, Bounce, Elastic */
+TweenMax, 
+TimelineMax, 
+Bounce, 
+Elastic 
+
+*/
 
 "use-strict";
 
 var highSpeed = 0.1,
     midHighSpeed = 0.2,
     mediumSpeed = 0.3,
-    normalSpeed = 0.5;
-    slowSpeed = 0.7;
+    normalSpeed = 0.5,
+    slowSpeed = 0.7,
     oneSecSpeed = 1.0;
 
 var tl = new TimelineMax();
