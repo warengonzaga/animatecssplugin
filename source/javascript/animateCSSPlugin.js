@@ -1,3 +1,15 @@
+/*!
+ * animatecssplugin - https://github.com/WarenGonzaga/AnimateCSSPlugin#readme
+ * Version: 0.3.0
+ * Demo: https://warengonzaga.github.io/sites/animatecssplugin.html
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright (c) 2018 Waren Gonzaga
+ * 
+ * Facebook: @WarenGonzagaOfficialPage
+ * Twitter: @Waren_Gonzaga
+ * Github: @WarenGonzaga
+ */
+
 "use-strict";
 
 var highSpeed = 0.1,
