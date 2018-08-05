@@ -1,14 +1,3 @@
-/* global 
-
-TweenMax, 
-TimelineMax,
-Power1,
-Back,
-Bounce,
-Elastic
-
-*/
-
 "use-strict";
 
 var highSpeed = 0.1,
