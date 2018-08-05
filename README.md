@@ -64,7 +64,7 @@ Try the codepen demo here! --> http://codepen.io/Waren_Gonzaga/pen/YGGRBz
 
 <h3> Installation </h3>
 
-1. AnimateCSSPlugin requires [Node.js](https://nodejs.org/) v6+ to run.
+1. AnimateCSSPlugin requires [Node.js](https://nodejs.org/) v7+ to run.
 2. Download and extract the [latest release](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases).
 3. Install the dependencies and devDependencies.
 
