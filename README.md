@@ -87,6 +87,7 @@ To build your changes do this:
 ```
 
 <h3> Contribution </h3>
+
 * To contribute you must have idea on how to use GreenSock Animation Platform.
 * To contribute you should have experience in using preprocessors such as Pug.js (formely Jade) and SASS.
 * To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent.
