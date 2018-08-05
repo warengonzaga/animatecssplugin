@@ -8,6 +8,12 @@
  * Facebook: @WarenGonzagaOfficialPage
  * Twitter: @Waren_Gonzaga
  * Github: @WarenGonzaga
+<<<<<<< HEAD
+=======
+ * 
+ * Collaborator
+ * # SakhirAtwi - github.com/SakhirAtwi
+>>>>>>> 21a6e978ab817c84f0961945e792c5aec056f6bf
  */
 
 "use-strict";

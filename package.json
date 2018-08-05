@@ -17,6 +17,7 @@
     "gsap"
   ],
   "author": "Waren Gonzaga",
+  "collaborator": "SakhirAtwi",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/WarenGonzaga/AnimateCSSPlugin/issues"
