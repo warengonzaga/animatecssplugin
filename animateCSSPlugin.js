@@ -11,7 +11,10 @@
  * 
  * Collaborator
  * # SakhirAtwi - github.com/SakhirAtwi
+<<<<<<< HEAD
  *
+=======
+>>>>>>> b3268b103d31adf81ce3ea328c7bc8b5cfff84aa
  */
 
 "use-strict";
