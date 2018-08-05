@@ -1,9 +1,8 @@
+[![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![devDependencies Status](https://david-dm.org/WarenGonzaga/AnimateCSSPlugin/dev-status.svg)](https://david-dm.org/WarenGonzaga/AnimateCSSPlugin?type=dev) [![GitHub fork](https://img.shields.io/github/forks/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin)
+[![GitHub star](https://img.shields.io/github/stars/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animatecssplugin/Lobby)
 
-[![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![devDependencies Status](https://david-dm.org/WarenGonzaga/AnimateCSSPlugin/dev-status.svg)](https://david-dm.org/WarenGonzaga/AnimateCSSPlugin?type=dev) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animatecssplugin/Lobby)
-
-## AnimateCSSPlugin - [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) 
-<i>"The Easiest Way to Animate"</i>
-***
+## AnimateCSSPlugin [![Developer](https://img.shields.io/badge/Developed%20by-WarenGonzaga-blue.svg)](https://github.com/WarenGonzaga/) [![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<i>"The Easiest Way to Animate"</i> - **[Demo](http://warengonzaga.github.io/sites/animatecssplugin.html)**
 
 ### For GreenSock (TweenMax & TweenLite) </h3>
 <p> AnimateCSSPlugin is a plugin for GreenSock Animation Platform or GSAP. This plugin is replicate of all animation from Animate.css. The reason was they cannot be both use in creating custom animation such as Banner Ads making. So I decided to create a project the could be mimic all of the animation that can be found on Animate.css. I know this is silly idea but this will help others to use both animate.css and gsap with no worries. You can contribute and mimic the animtions from animate.css then make a pull request the I will review it as soon as possible thanks!
@@ -98,6 +97,10 @@ To build your changes do this:
 It will generate `demo/` and `build/` folders in your directory. Demo folder contains one html file, css file and js file for demo purposes while Build folder contains the minified javascript of AnimateCSSPlugin (AnimateCSSPlugin.min.js) and production javascript version of AnimateCSSPlugin (AnimateCSSPlugin.js). Make pull request for any updates!
 
 <h3> GreenSock Forum </h3>
-[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)
+GreenSock Forum - http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/
 
+<h3>Donate</h3>
+
+
+***
 </> with <3 by Waren Gonzaga
