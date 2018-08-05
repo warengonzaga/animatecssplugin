@@ -1,9 +1,11 @@
 /* global 
 
 TweenMax, 
-TimelineMax, 
-Bounce, 
-Elastic 
+TimelineMax,
+Power1,
+Back,
+Bounce,
+Elastic
 
 */
 
