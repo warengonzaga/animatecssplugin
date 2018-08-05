@@ -1,6 +1,6 @@
 {
-  "name": "animatedcssplugin",
-  "version": "0.2.2",
+  "name": "animatecssplugin",
+  "version": "0.3.0",
   "description": "AnimateCSSPlugin is a plugin for GreenSock Animation Platform or GSAP",
   "main": "gulpfile.js",
   "scripts": {
@@ -21,10 +21,13 @@
   "bugs": {
     "url": "https://github.com/WarenGonzaga/AnimateCSSPlugin/issues"
   },
+  "demo": "https://warengonzaga.github.io/sites/animatecssplugin.html",
   "homepage": "https://github.com/WarenGonzaga/AnimateCSSPlugin#readme",
   "devDependencies": {
     "browser-sync": "2.24.6",
     "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-header": "^2.0.5",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^2.0.1",
     "gulp-minifier": "^1.2.2",
@@ -36,8 +39,5 @@
     "jshint": "^2.9.3",
     "jshint-stylish": "^2.2.1",
     "sass-lint": "^1.9.1"
-  },
-  "dependencies": {
-    "9": "0.0.1"
   }
 }
