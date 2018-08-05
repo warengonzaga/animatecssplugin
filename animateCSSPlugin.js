@@ -10,6 +10,18 @@
  * Github: @WarenGonzaga
  */
 
+/*!
+ * animatecssplugin - https://github.com/WarenGonzaga/AnimateCSSPlugin#readme
+ * Version: 0.3.0
+ * Demo: https://warengonzaga.github.io/sites/animatecssplugin.html
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright (c) 2018 Waren Gonzaga
+ * 
+ * Facebook: @WarenGonzagaOfficialPage
+ * Twitter: @Waren_Gonzaga
+ * Github: @WarenGonzaga
+ */
+
 "use-strict";
 
 var highSpeed = 0.1,
@@ -22,7 +34,7 @@ var highSpeed = 0.1,
 var tl = new TimelineMax();
     
 function reset() {
-    TweenMax.set(this.target, {x: 0, y: 0, z: 0, opacity: 1, scale: 1, rotationX: 0 , rotationY: 0 , rotation: 0, transformOrigin: "center center"});
+    TweenMax.set(this.target, {x: 0, y: 0, z: 0, opacity: 1, scale: 1, rotationX: 0, rotationY: 0 , rotation: 0, skewX: 0, skewY: 0 , transformOrigin: "center center"});
 }
  
 function bounce() {
@@ -102,7 +114,8 @@ function jello() {
     .to(this.target, highSpeed, {skewX: 7 , skewY: 14 ,ease: Power1.easeOut})
     .to(this.target, highSpeed, {skewX: -10 , skewY: -5 ,ease: Power1.easeOut})
     .to(this.target, highSpeed, {skewX: 3 , skewY: 1.5 ,ease: Power1.easeOut})
-    .to(this.target, highSpeed, {skewX: -1 , skewY : -1, ease: Power1.easeOut , onComplete: reset});
+    .to(this.target, highSpeed, {skewX: -1 , skewY: -1 ,ease: Power1.easeOut})
+    .to(this.target, highSpeed, {skewX: 0 , skewY : 0, ease: Power1.easeOut , onComplete: reset});
 }
 
 
@@ -345,4 +358,77 @@ function flipOutY() {
     .to(this.target, oneSecSpeed, {rotationY : 90 , opacity: 0 , ease: Back.easeOut.config(4) , onComplete: reset});
 }
 
+function lightSpeedIn() {
+
+    tl.set(this.target, { opacity: 0 , skewX: 50 , x: 500 })
+    .to(this.target, 2, {opacity: 1, x :0, skewX: 0 , ease: Back.easeOut.config(1), onComplete:reset });
+
+}
+
+function lightSpeedOut() {
+
+    tl.set(this.target, { opacity: 1, x :0, skewX: 0 })
+    .to(this.target, 3, {opacity: 0 , skewX: 50 , x: 500 , ease: Back.easeOut.config(1), onComplete:reset });
+
+}
+
+function rotateIn() {
+
+    tl.set(this.target, {rotationZ : -150 , opacity: 0})
+    .to(this.target, 1.1, {rotationZ : 0 , opacity: 1 , ease: Power1.easeOut , onComplete: reset});
+}
+
+function rotateInDownLeft() {
+
+    tl.set(this.target, {rotationZ : -15 , transformOrigin: "left bottom" , opacity: 0})
+    .to(this.target, oneSecSpeed, {rotationZ : 0 , opacity: 1 , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateInDownRight() {
+
+    tl.set(this.target, {rotationZ : 15 , transformOrigin: "right bottom" , opacity: 0})
+    .to(this.target, oneSecSpeed, {rotationZ : 0 , opacity: 1 , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateInUpLeft() {
+
+    tl.set(this.target, {rotationZ : 17 , transformOrigin: "left bottom" , opacity: 0})
+    .to(this.target, oneSecSpeed, {rotationZ : 0 , opacity: 1 , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateInUpRight() {
+
+    tl.set(this.target, {rotationZ : -17 , transformOrigin: "right bottom" , opacity: 0})
+    .to(this.target, oneSecSpeed, {rotationZ : 0 , opacity: 1 , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOut() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, slowSpeed, {rotationZ : 200 , opacity: 0 , ease: Power1.easeOut , onComplete: reset});
+}
+
+function rotateOutDownLeft() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, 1.3, {rotationZ : 15 , opacity: 0 , transformOrigin: "left bottom" , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutDownRight() {
+
+    tl.set(this.target, {rotationZ : 0 , opacity: 1})
+    .to(this.target, 1.3, {rotationZ : -15 , opacity: 0 , transformOrigin: "right bottom" , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutUpLeft() {
+
+    tl.set(this.target, {rotationZ : 0 , transformOrigin: "left bottom" , opacity: 1})
+    .to(this.target, oneSecSpeed, {rotationZ : -15 , opacity: 0  , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
+
+function rotateOutUpRight() {
+
+    tl.set(this.target, {rotationZ : 0 , transformOrigin: "right bottom" , opacity: 1})
+    .to(this.target, oneSecSpeed, {rotationZ : 15 , opacity: 0  , ease: Back.easeOut.config(1.7) , onComplete: reset});
+}
 
