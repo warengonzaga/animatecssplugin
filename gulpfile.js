@@ -35,6 +35,9 @@ var opts = {
     ' * Facebook: @WarenGonzagaOfficialPage',
     ' * Twitter: @Waren_Gonzaga',
     ' * Github: @WarenGonzaga',
+    ' * ',
+    ' * Collaborator',
+    ' * # SakhirAtwi - github.com/SakhirAtwi',
     ' */\n\n',
   ].join('\n'),
   
