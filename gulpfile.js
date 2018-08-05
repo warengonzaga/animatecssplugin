@@ -10,7 +10,8 @@ var gulp  = require('gulp'),
     minify = require('gulp-minifier'),
     multiDest = require('gulp-multi-dest'),
     rename = require('gulp-rename');
-    
+    browserSync = require('browser-sync').create();
+
 var destOptions = {
     mode: 0755
 };
@@ -27,7 +28,7 @@ gulp.task('init', function() {
     gutil.log(gutil.colors.green('Writen by Waren Gonzaga'));
 });
 
-gulp.task('dev', ['jade','sass','jshint','build'], function() {
+gulp.task('dev', ['jade','sass','jshint','build','browserSync'], function() {
   gulp.watch('source/*jade', ['jade'], gutil.log(
     gutil.colors.cyan('Watching index.jade file...'),
     gutil.colors.green('OK!')
@@ -40,6 +41,7 @@ gulp.task('dev', ['jade','sass','jshint','build'], function() {
     gutil.colors.cyan('Watching javascript files...'),
     gutil.colors.green('OK!')
     ));
+  gulp.watch('./demo/index.html', browserSync.reload)
   gutil.log(gutil.colors.cyan('Watching Changes...'));
 });
 
@@ -65,6 +67,7 @@ gulp.task('sass', function() {
   .pipe(sassLint.failOnError())
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(rename('demo/css/style.min.css'))
+  .pipe(browserSync.stream())
   .pipe(gulp.dest(''));
 });
 
@@ -84,6 +87,7 @@ gulp.task('jshint', function() {
     minifyJS: true,
   }))
   .pipe(rename('demo/js/animateCSSPlugin.min.js'))
+  .pipe(browserSync.stream())
   .pipe(gulp.dest(''));
     
   /** Minified Script **/  
@@ -97,6 +101,7 @@ gulp.task('jshint', function() {
     minifyJS: true,
   }))
   .pipe(rename('demo/js/script.min.js'))
+  .pipe(browserSync.stream())
   .pipe(gulp.dest(''));
 });
 
@@ -125,4 +130,12 @@ gulp.task('build', function() {
   gutil.log(gutil.colors.cyan('Production:'), gutil.colors.green('DONE!!!'));
   
   gutil.log(gutil.colors.cyan('Status:'), gutil.colors.green('DONE!!!'));
+});
+
+gulp.task('browserSync', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./demo"
+    }
+  });
 });
