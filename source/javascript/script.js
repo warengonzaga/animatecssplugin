@@ -1,4 +1,4 @@
-"use-strict";
+ "use-strict";
 
 function animation() {
     var e = document.getElementById("animations");
@@ -171,6 +171,34 @@ function animation() {
     else if (userSelect == "flipOutY") {
         console.log("flipOutY Selected");
         return apflipOutY();
+    }
+    else if (userSelect == "lightSpeedIn") {
+        console.log("lightSpeedIn Selected");
+        return aqlightSpeedIn();
+    }
+    else if (userSelect == "lightSpeedOut") {
+        console.log("lightSpeedOut Selected");
+        return arlightSpeedOut();
+    }
+    else if (userSelect == "rotateIn") {
+        console.log("rotateIn Selected");
+        return asrotateIn();
+    }
+    else if (userSelect == "rotateInDownLeft") {
+        console.log("rotateInDownLeft Selected");
+        return atrotateInDownLeft();
+    }
+    else if (userSelect == "rotateInDownRight") {
+        console.log("rotateInDownRight Selected");
+        return aurotateInDownRight();
+    }
+    else if (userSelect == "rotateInUpLeft") {
+        console.log("rotateInUpLeft Selected");
+        return aurotateInUpLeft();
+    }
+    else if (userSelect == "rotateInUpRight") {
+        console.log("rotateInUpRight Selected");
+        return avrotateInUpRight();
     }
 
 
@@ -358,3 +386,33 @@ function aoflipOutX() {
 function apflipOutY() {
     TweenMax.to("#texts", 1, {onStart: flipOutY});
 }
+
+function aqlightSpeedIn() {
+    TweenMax.to("#texts", 1, {onStart: lightSpeedIn});
+}
+
+function arlightSpeedOut() {
+    TweenMax.to("#texts", 1, {onStart: lightSpeedOut});
+}
+
+function asrotateIn() {
+    TweenMax.to("#texts", 1, {onStart: rotateIn});
+}
+
+function atrotateInDownLeft() {
+    TweenMax.to("#texts", 1, {onStart: rotateInDownLeft});
+}
+
+function aurotateInDownRight() {
+    TweenMax.to("#texts", 1, {onStart: rotateInDownRight});
+}
+
+function aurotateInUpLeft() {
+    TweenMax.to("#texts", 1, {onStart: rotateInUpLeft});
+}
+
+function avrotateInUpRight() {
+    TweenMax.to("#texts", 1, {onStart: rotateInUpRight});
+}
+
+
