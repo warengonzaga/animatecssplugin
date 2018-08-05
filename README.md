@@ -1,3 +1,4 @@
+
 [![GitHub release](https://img.shields.io/github/release/WarenGonzaga/AnimateCSSPlugin.svg)](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases) [![Build Status](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin.svg?branch=master)](https://travis-ci.org/WarenGonzaga/AnimateCSSPlugin) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Built with Gulp](https://img.shields.io/badge/Built%20with-GULP-%23CF4646.svg)](http://gulpjs.com/) [![chat](https://img.shields.io/badge/chat-gitter-green.svg)](https://gitter.im/animatecssplugin/Lobby)
 
 ## AnimateCSSPlugin ➡ [Demo](http://warengonzaga.github.io/sites/animatecssplugin.html) 
@@ -62,9 +63,10 @@ function animation() {
 Try the codepen demo here! --> http://codepen.io/Waren_Gonzaga/pen/YGGRBz
 
 <h3> Installation </h3>
-AnimateCSSPlugin requires [Node.js](https://nodejs.org/) v6+ to run.
-Download and extract the [latest release](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases)
-Install the dependencies and devDependencies.
+
+1. AnimateCSSPlugin requires [Node.js](https://nodejs.org/) v6+ to run.
+2. Download and extract the [latest release](https://github.com/WarenGonzaga/AnimateCSSPlugin/releases).
+3. Install the dependencies and devDependencies.
 
 ```sh
  $ npm install
@@ -96,6 +98,6 @@ To build your changes do this:
 It will generate `demo/` and `build/` folders in your directory. Demo folder contains one html file, css file and js file for demo purposes while Build folder contains the minified javascript of AnimateCSSPlugin (AnimateCSSPlugin.min.js) and production javascript version of AnimateCSSPlugin (AnimateCSSPlugin.js). Make pull request for any updates!
 
 <h3> GreenSock Forum </h3>
-<b>[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)</b>
+[GreenSock Forum Link](http://greensock.com/forums/topic/15115-animatecssplugin-is-now-open/)
 
 </> with <3 by Waren Gonzaga
