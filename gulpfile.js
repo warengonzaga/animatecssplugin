@@ -1,20 +1,45 @@
 /* File: gulpfile.js */
 
 /* Gulp Packages */
-var gulp  = require('gulp'),
-    gutil = require('gulp-util'),
-    jade = require('gulp-jade'),
-    sass = require('gulp-sass'),
-    sassLint = require('gulp-sass-lint'),
-    jshint = require('gulp-jshint'),
-    minify = require('gulp-minifier'),
-    multiDest = require('gulp-multi-dest'),
-    rename = require('gulp-rename'),
+var gulp        = require('gulp'),
+    fs          = require('fs'),
+    gutil       = require('gulp-util'),
+    jade        = require('gulp-jade'),
+    sass        = require('gulp-sass'),
+    sassLint    = require('gulp-sass-lint'),
+    jshint      = require('gulp-jshint'),
+    minify      = require('gulp-minifier'),
+    multiDest   = require('gulp-multi-dest'),
+    rename      = require('gulp-rename'),
+    header      = require('gulp-header'),
+    clean       = require('gulp-clean'),
     browserSync = require('browser-sync').create();
 
 var destOptions = {
     mode: 0755
 };
+
+var pkg = JSON.parse(fs.readFileSync('package.json'));
+
+// Task options
+var opts = {
+
+  label: [
+    '/*!',
+    ' * <%= name %> - <%= homepage %>',
+    ' * Version: <%= version %>',
+    ' * Demo: <%= demo %>',
+    ' * Licensed under the MIT license - http://opensource.org/licenses/MIT',
+    ' * Copyright (c) <%= new Date().getFullYear() %> <%= author %>',
+    ' * ',
+    ' * Facebook: @WarenGonzagaOfficialPage',
+    ' * Twitter: @Waren_Gonzaga',
+    ' * Github: @WarenGonzaga',
+    ' */\n\n',
+  ].join('\n'),
+  
+};
+
 
 /**
  * Gulp Tasks
@@ -108,8 +133,9 @@ gulp.task('jshint', function() {
 gulp.task('build', function() {
   gutil.log(gutil.colors.cyan('Building and Updating your animateCSSplugin'));
   gutil.log(gutil.colors.cyan('By Waren Gonzaga...'));
-  /** Minified build **/
-  gulp.src('source/javascript/animateCSSPlugin.js')
+  
+  /** Minified Build **/
+  gulp.src('./source/javascript/animateCSSPlugin.js')
   .pipe(jshint('.jshintrc'))
   .pipe(jshint.reporter('jshint-stylish'))
   .pipe(minify({
@@ -118,18 +144,21 @@ gulp.task('build', function() {
     conservativeCollapse: true,
     minifyJS: true,
   }))
-  .pipe(rename('build/animateCSSPlugin.min.js'))
+  .pipe(rename('./build/animateCSSPlugin.min.js'))
+  .pipe(header(opts.label, pkg))
   .pipe(gulp.dest(''));
   gutil.log(gutil.colors.cyan('Minified:'), gutil.colors.green('DONE!!!'));
   
-  /** Production build **/
-  gulp.src('source/javascript/animateCSSPlugin.js')
+  /** Production Build **/
+  gulp.src('./source/javascript/animateCSSPlugin.js')
   .pipe(jshint('.jshintrc'))
   .pipe(jshint.reporter('jshint-stylish'))
-  .pipe(multiDest(['build','demo/js'], destOptions));
+  .pipe(header(opts.label, pkg))
+  .pipe(multiDest(['./build','./demo/js'], destOptions));
   gutil.log(gutil.colors.cyan('Production:'), gutil.colors.green('DONE!!!'));
   
   gutil.log(gutil.colors.cyan('Status:'), gutil.colors.green('DONE!!!'));
+  gutil.log(gutil.colors.red('Do "gulp update" to update the downloadable version of AnimateCSSPlugin.'));
 });
 
 gulp.task('browserSync', function() {
@@ -138,4 +167,31 @@ gulp.task('browserSync', function() {
       baseDir: "./demo"
     }
   });
+});
+
+gulp.task('clean-build', function() {
+  return gulp.src('build', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean-demo', function() {
+  return gulp.src('demo', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean-animatecssplugin-dl', function() {
+  return gulp.src('./animateCSSPlugin.js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean-animatecssplugin.min-dl', function() {
+  return gulp.src('./animateCSSPlugin.min.js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean', ['clean-build','clean-demo','clean-animatecssplugin-dl','clean-animatecssplugin.min-dl']);
+
+gulp.task('update', function() {
+    gulp.src('./build/*js')
+    .pipe(gulp.dest('./'));
 });
