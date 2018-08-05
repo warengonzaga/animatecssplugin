@@ -108,7 +108,9 @@ If you love this project please consider to support the development by donating.
 **Bitcoin:** 39qo5h3aic9K2aTFRzdGSVNuqtS8uMBKJu
 
 <h3>Author</h3>
+
 AnimateCSSPlugin is Developed and Maintained by **Waren Gonzaga**
+
 * **Facebook:** https://facebook.com/warengonzagaofficialpage
 * **Twitter:** https://twitter.com/waren_gonzaga
 * **Email:** warengonzaga.dev@gmail.com
