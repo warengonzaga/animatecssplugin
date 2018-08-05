@@ -92,6 +92,7 @@ To build your changes do this:
 * To contribute you should have experience in using preprocessors such as Pug.js (formely Jade) and SASS.
 * To contribute follow the coding style in the dev/animateCSSPlugin.js so this will make the project neat and consistent.
 
+<h4>Note</h4>
 It will generate `demo/` and `build/` folders in your directory. Demo folder contains one html file, css file and js file for demo purposes while Build folder contains the minified javascript of AnimateCSSPlugin (AnimateCSSPlugin.min.js) and production javascript version of AnimateCSSPlugin (AnimateCSSPlugin.js). Make pull request for any updates!
 
 <h3> GreenSock Forum </h3>
