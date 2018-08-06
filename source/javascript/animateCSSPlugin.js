@@ -432,4 +432,29 @@ function slideInRight() {
     .to(this.target, oneSecSpeed, {x: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
 }
 
+function slideOutUp() {
+
+    tl.set(this.target, {y: 0})
+    .to(this.target, oneSecSpeed, {y: -80 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideOutDown() {
+
+    tl.set(this.target, {y: 0})
+    .to(this.target, oneSecSpeed, {y: 80 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideOutLeft() {
+
+    tl.set(this.target, {x: 0})
+    .to(this.target, oneSecSpeed, {x: -400 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideOutRight() {
+
+    tl.set(this.target, {x: 0})
+    .to(this.target, oneSecSpeed, {x: 400 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+
 
