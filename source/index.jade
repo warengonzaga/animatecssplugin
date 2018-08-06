@@ -38,6 +38,7 @@ html
       | wobble
      option(value="jello")
       | jello
+    optgroup(label="Bouncing Entrances")
      option(value="bounceIn")
       | bounceIn
      option(value="bounceInDown")
@@ -48,6 +49,7 @@ html
       | bounceInRight
      option(value="bounceInUp")
       | bounceInUp
+    optgroup(label="Bouncing Exits")
      option(value="bounceOut")
       | bounceOut
      option(value="bounceOutDown")
@@ -58,6 +60,7 @@ html
       | bounceOutRight
      option(value="bounceOutUp")
       | bounceOutUp
+    optgroup(label="Fading Entrances")
      option(value="fadeIn")
       | fadeIn
      option(value="fadeInDown")
@@ -76,6 +79,7 @@ html
       | fadeInUp
      option(value="fadeInUpBig")
       | fadeInUpBig
+    optgroup(label="Fading Exits")
      option(value="fadeOut")
       | fadeOut
      option(value="fadeOutDown")
@@ -94,6 +98,7 @@ html
       | fadeOutUp
      option(value="fadeOutUpBig")
       | fadeOutUpBig
+    optgroup(label="Flippers")
      option(value="flip")
       | flip
      option(value="flipInX")
@@ -104,10 +109,12 @@ html
       | flipOutX
      option(value="flipOutY")
       | flipOutY
+    optgroup(label="Light Speed")
      option(value="lightSpeedIn")
       | lightSpeedIn
      option(value="lightSpeedOut")
       | lightSpeedOut
+    optgroup(label="Rotating Entrances")
      option(value="rotateIn")
       | rotateIn
      option(value="rotateInDownLeft")
@@ -118,6 +125,7 @@ html
       | rotateInUpLeft
      option(value="rotateInUpRight")
       | rotateInUpRight
+    optgroup(label="Rotating Exits")
      option(value="rotateOut")
       | rotateOut
      option(value="rotateOutDownLeft")
@@ -128,6 +136,15 @@ html
       | rotateOutUpLeft
      option(value="rotateOutUpRight")
       | rotateOutUpRight
+    optgroup(label="Sliding Entrances")
+     option(value="slideInUp")
+      | slideInUp
+     option(value="slideInDown")
+      | slideInDown
+     option(value="slideInLeft")
+      | slideInLeft
+     option(value="slideInRight")
+      | slideInRight
      
      
    button(onclick="animation()").
