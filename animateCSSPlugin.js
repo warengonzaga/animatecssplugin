@@ -437,7 +437,21 @@ function slideInDown() {
 
 function slideInLeft() {
 
-    tl.set(this.target, {y: -80})
-    .to(this.target, oneSecSpeed, {y: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+    tl.set(this.target, {x: -400})
+    .to(this.target, oneSecSpeed, {x: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
 }
+
+function slideInRight() {
+
+    tl.set(this.target, {x: 400})
+    .to(this.target, oneSecSpeed, {x: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideOutUp() {
+
+    tl.set(this.target, {y: 0})
+    .to(this.target, oneSecSpeed, {y: 80 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+
 

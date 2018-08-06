@@ -236,6 +236,23 @@ function animation() {
         console.log("slideInRight Selected");
         return aaeslideInRight();
     }
+    else if (userSelect == "slideOutUp") {
+        console.log("slideOutUp Selected");
+        return aafslideOutUp();
+    }
+    else if (userSelect == "slideOutDown") {
+        console.log("slideOutDown Selected");
+        return aagslideOutDown();
+    }
+    else if (userSelect == "slideOutLeft") {
+        console.log("slideOutLeft Selected");
+        return aahslideOutLeft();
+    }
+    else if (userSelect == "slideOutRight") {
+        console.log("slideOutRight Selected");
+        return aaislideOutRight();
+    }
+
 
 
 
@@ -486,6 +503,22 @@ function aadslideInLeft() {
 
 function aaeslideInRight() {
     TweenMax.to("#texts", 1, {onStart: slideInRight});
+}
+
+function aafslideOutUp() {
+    TweenMax.to("#texts", 1, {onStart: slideOutUp});
+}
+
+function aagslideOutDown() {
+    TweenMax.to("#texts", 1, {onStart: slideOutDown});
+}
+
+function aahslideOutLeft() {
+    TweenMax.to("#texts", 1, {onStart: slideOutLeft});
+}
+
+function aaislideOutRight() {
+    TweenMax.to("#texts", 1, {onStart: slideOutRight});
 }
 
 
