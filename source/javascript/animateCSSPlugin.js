@@ -408,3 +408,28 @@ function rotateOutUpRight() {
     .to(this.target, oneSecSpeed, {rotationZ : 15 , opacity: 0  , ease: Back.easeOut.config(1.7) , onComplete: reset});
 }
 
+function slideInUp() {
+
+    tl.set(this.target, {y: 80})
+    .to(this.target, oneSecSpeed, {y: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideInDown() {
+
+    tl.set(this.target, {y: -80})
+    .to(this.target, oneSecSpeed, {y: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideInLeft() {
+
+    tl.set(this.target, {x: -400})
+    .to(this.target, oneSecSpeed, {x: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+function slideInRight() {
+
+    tl.set(this.target, {x: 400})
+    .to(this.target, oneSecSpeed, {x: 0 , ease: Back.easeOut.config(1) , onComplete: reset});
+}
+
+

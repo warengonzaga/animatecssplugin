@@ -220,6 +220,22 @@ function animation() {
         console.log("rotateOutUpRight Selected");
         return aaarotateOutUpRight();
     }
+    else if (userSelect == "slideInUp") {
+        console.log("slideInUp Selected");
+        return aabslideInUp();
+    }
+    else if (userSelect == "slideInDown") {
+        console.log("slideInDown Selected");
+        return aacslideInDown();
+    }
+    else if (userSelect == "slideInLeft") {
+        console.log("slideInLeft Selected");
+        return aadslideInLeft();
+    }
+    else if (userSelect == "slideInRight") {
+        console.log("slideInRight Selected");
+        return aaeslideInRight();
+    }
 
 
 
@@ -454,6 +470,22 @@ function azrotateOutUpLeft() {
 
 function aaarotateOutUpRight() {
     TweenMax.to("#texts", 1, {onStart: rotateOutUpRight});
+}
+
+function aabslideInUp() {
+    TweenMax.to("#texts", 1, {onStart: slideInUp});
+}
+
+function aacslideInDown() {
+    TweenMax.to("#texts", 1, {onStart: slideInDown});
+}
+
+function aadslideInLeft() {
+    TweenMax.to("#texts", 1, {onStart: slideInLeft});
+}
+
+function aaeslideInRight() {
+    TweenMax.to("#texts", 1, {onStart: slideInRight});
 }
 
 
